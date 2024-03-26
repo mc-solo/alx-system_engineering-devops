@@ -1,0 +1,5 @@
+#!/bin/bash
+# Get the PID of the current script
+
+pid=$$
+echo '$pid'
