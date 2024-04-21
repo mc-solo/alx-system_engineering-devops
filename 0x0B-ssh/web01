@@ -1,4 +1,0 @@
-#!/bin/bash
-#establish connection via ssh to the remote server
-
-ssh ubuntu@54.160.65.77

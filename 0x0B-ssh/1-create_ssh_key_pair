@@ -1,4 +1,0 @@
-#!/bin/env bash
-#creating a key pair for auth purpose
-
-ssh-keygen -b 4096 -N betty -f school
