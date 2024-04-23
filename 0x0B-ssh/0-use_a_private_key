@@ -1,4 +1,4 @@
 #!/bin/env bash
 #connects to a remote server via a private key
 
-ssh ununtu@3.90.65.255 -i ~/.ssh/school
+ssh -i ~/.ssh/school ununtu@3.90.65.255
