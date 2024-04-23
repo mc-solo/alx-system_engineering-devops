@@ -1,4 +1,4 @@
 #!/bin/env bash
-#connects to a remote server via a private key
+#connect to remote server via a public key
 
-ssh -i ~/.ssh/school ununtu@3.90.65.255
+ssh -i ~/.ssh/school ubuntu@107.22.143.243
