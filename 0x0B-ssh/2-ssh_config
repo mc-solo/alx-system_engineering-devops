@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#client side ssh config file 
+
+Host ubuntu@107.22.143.243
+	IdentityFile ~/.ssh/school
+	PassowrdAuthentication No
