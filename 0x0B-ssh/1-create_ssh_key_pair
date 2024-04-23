@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#creates an RSA key pair locked with a passphase
+
+ssh-keygen -b 4096 -P 'betty' -f school
