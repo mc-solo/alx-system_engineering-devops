@@ -1,7 +1,11 @@
-# installing flask from pip3 using puppet
+#install flask from pip3 3 using exec resource type
 
-package {'flask':
-  ensure   => '2.1.0', # to install this specific version instead of the latest one
-  provider => 'pip', # can't directly use pip3
+exec {'install flask':
+  require => Exec['check-python'],
+  command => '/usr/bin/pip3 install flask==2.1.0',
+}
+
+exec {'check-python':
+  command => '/usr/bin/which python3',
 }
 
