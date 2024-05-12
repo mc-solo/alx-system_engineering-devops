@@ -1,0 +1,19 @@
+What happens when you type https://www.google.com in your browser and press Enter.
+The Journey of Loading Google.com
+DNS Request
+When you type “https://www.google.com" and press Enter, your browser initiates a Domain Name System (DNS) request to translate the human-readable domain name into an IP address. This process involves querying DNS servers to obtain the specific IP address associated with the Google server.
+TCP/IP
+After obtaining the IP address, the Transmission Control Protocol (TCP) establishes a reliable connection between your machine and the Google server. TCP ensures data integrity by breaking down data into packets for transmission, which are then reassembled at the destination.
+Firewall
+Before establishing a connection, your browser encounters a firewall, a security measure that scrutinizes incoming and outgoing network traffic. The firewall acts as a protective barrier, filtering packets based on predefined rules to ensure secure and authorized communication.
+HTTPS/SSL
+Upon passing the firewall, the Hypertext Transfer Protocol Secure (HTTPS) and Secure Sockets Layer (SSL) protocols come into play. These protocols encrypt the data exchanged between your browser and the server, ensuring confidentiality and security during transmission. SSL certificates authenticate the server and enable encrypted communication.
+Load Balancer
+To manage high volumes of incoming traffic, load balancers distribute requests across multiple servers. This ensures that no single server becomes overwhelmed, optimizing performance and ensuring a seamless user experience when accessing Google.com.
+Web Server
+Following load balancing, the web server processes the HTTP request, determining the necessary actions to fulfill the request. It handles static content and communicates with the application server to process dynamic content.
+Application Server
+The application server is responsible for handling dynamic content, such as search queries on Google.com. It executes business logic, interacts with databases, and generates responses based on user requests, ensuring the delivery of relevant and up-to-date information.
+Conclusion
+The process of loading “https://www.google.com" involves a series of intricate steps, from DNS resolution to data transmission protocols, security measures, load balancing, and server-side processing. Understanding these components provides insight into the complex infrastructure that enables seamless browsing experiences on the web.
+
