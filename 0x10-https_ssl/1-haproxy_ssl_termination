@@ -1,1 +1,17 @@
+defaults
+    mode http
+    timeout client 15s
+    timeout connect 10s
+    timeout server 15s
+    timeout http-request 10s
 
+frontend iamitsfoss-frontend
+    bind *:80
+    bind *:443 ssl crt /etc/haproxy/certs/iamitsfoss.tech.pem
+    default_backend mc-solo.tech-backend
+
+backend mc-solo.tech-backend
+    http-request redirect scheme https if  !{ ssl_fc }
+    balance roundrobin
+    server 442095-web-01 107.22.143.243	 check
+    server 442095-web-02 34.229.71.170 check
