@@ -3,7 +3,7 @@ server {
         listen [::]:80;
         add_header X-Served-By $HOSTNAME;
 
-        server_name 107.22.143.243;
+        server_name 35.175.126.203;
 
         root /var/www/school;
         index index.html;
